@@ -14,7 +14,7 @@ import face_recognition
 def RandomSort(K, NumberOfFaces, FaceData):
     NumFaces=NumberOfFaces
     ObigDiff=1e10
-    trials=5000
+    trials=1000*K
     count=0
     bestClustering=[{}]*K
     randy=np.random.randint(low = 0, high = NumFaces, size = trials*K)
